@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  lab-tunley
 //
-//  Created by Charlie Hieger on 12/1/22.
+//  Created by Charlie Hieger on 12/1/22. Edited & worked on by Kaz Harper 9/10/23.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 class TracksViewController: UIViewController {
 
     // TODO: Pt 1 - Add a tracks property
-
+    var tracks: [Track] = []
 
     // TODO: Pt 1 - Add table view outlet
 
@@ -18,7 +18,8 @@ class TracksViewController: UIViewController {
         super.viewDidLoad()
 
         // TODO: Pt 1 - Set tracks property with mock tracks array
-
+        tracks = Track.mockTracks
+        print(tracks)
         
     }
 

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  lab-tunley
 //
-//  Created by Charlie Hieger on 12/1/22.
+//  Created by Charlie Hieger on 12/1/22. Edited & worked on by Kaz Harper 9/10/23.
 //
 
 import UIKit

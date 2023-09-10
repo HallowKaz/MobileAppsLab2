@@ -15,8 +15,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-xE-ODl">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="284" id="eCv-o9-JLw">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="284"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eCv-o9-JLw" id="tOA-ey-yAI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="284"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mn2-XU-eGO">
+                                                    <rect key="frame" x="16" y="16" width="361" height="252"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umX-AE-hMf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="7Wj-ur-EGG"/>
+                                                                <constraint firstAttribute="height" constant="100" id="buE-6D-fP0"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="z5X-J5-SZh">
+                                                            <rect key="frame" x="116" y="0.0" width="245" height="70"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cream" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxe-Lx-98z">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="245" height="33.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLACKPINK &amp; Selena Gomez" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5m1-7i-rE0">
+                                                                    <rect key="frame" x="0.0" y="49.666666666666671" width="245" height="20.333333333333329"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="mn2-XU-eGO" secondAttribute="trailing" constant="16" id="8f9-dS-7iu"/>
+                                                <constraint firstAttribute="bottom" secondItem="mn2-XU-eGO" secondAttribute="bottom" constant="16" id="AAP-xI-q8p"/>
+                                                <constraint firstItem="mn2-XU-eGO" firstAttribute="top" secondItem="tOA-ey-yAI" secondAttribute="top" constant="16" id="lGW-xD-sBc"/>
+                                                <constraint firstItem="mn2-XU-eGO" firstAttribute="leading" secondItem="tOA-ey-yAI" secondAttribute="leading" constant="16" id="yY0-J2-el4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bZE-xE-ODl" secondAttribute="bottom" id="AoM-gr-EtX"/>
+                            <constraint firstItem="bZE-xE-ODl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bdv-mu-V6K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bZE-xE-ODl" secondAttribute="trailing" id="cuR-9Y-naq"/>
+                            <constraint firstItem="bZE-xE-ODl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i99-bN-b5G"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RN7-BY-7fn"/>
                 </viewController>
